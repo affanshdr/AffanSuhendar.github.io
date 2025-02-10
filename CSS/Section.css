@@ -194,3 +194,13 @@ section {
     flex-direction: column;
 }
 
+
+#Contact {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
