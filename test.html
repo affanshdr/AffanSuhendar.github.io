@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Section</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        section {
+            height: 100vh;
+            scroll-snap-align: start;
+        }
+        #section1 {
+            background-color: lightblue;
+        }
+        #section2 {
+            background-color: lightcoral;
+        }
+        #section3 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <h1>Section 1</h1>
+    </section>
+    <section id="section2">
+        <h1>Section 2</h1>
+    </section>
+    <section id="section3">
+        <h1>Section 3</h1>
+    </section>
+</body>
+</html>

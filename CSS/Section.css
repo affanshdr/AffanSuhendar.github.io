@@ -1,0 +1,175 @@
+
+main {
+    height: 1000px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 40px 0;
+}
+
+#Home {
+    width: 100%;
+    color: var(--primary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#Home .Foto {
+    width: 200px;
+    height: 300px;
+    border-radius: 80px;
+    margin-left: 40px;
+    background-image: url('../Asset/Profil\ \(2\).jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  -30px -140px;
+    background-size: 140%;
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Prevent image shrinking */
+}
+
+#Home .Foto:hover {
+    border: 2px solid rgba(255, 254, 254, 0.9); 
+    transform: rotate(20deg);
+}
+
+#Home .Intro {
+    width: 60%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    #Home {
+        flex-direction: column;
+    }
+
+    #Home .Foto {
+        width: 150px;
+        height: 220px;
+        background-position:  -20px -100px;
+    }
+
+    #Home .Intro {
+        width: 90%;
+    }
+}
+
+#Home .Intro .Nama{
+    font-family: "Itim", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+#Home .Intro .Jobdesk{
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-size: 6vh;
+    font-style: normal;
+    margin: 12px 0;
+    letter-spacing: 5px;
+}
+
+#Home .Intro .About {
+    font-family: "Itim", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+#Home .Intro .Download {
+    display: flex;
+    margin: 12px 0;
+}
+
+#Home .Intro .Download a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: var(--primary-color);
+    margin-right: 90px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-family: "Itim", serif;
+    transition: 1s;
+}
+
+#Home .Intro .Download a:hover {
+    transform: scale(1.2);
+}
+
+#About {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    color: var(--primary-color);
+    font-family: "Itim", serif;
+    padding: 40px 0;
+    margin-left: 40px;
+
+}
+
+#About .Skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 160px;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#About .Skill:hover {
+    transform: scale(1.3);
+}
+
+
+.Card-Skill {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-content: space-around;
+    border: #fff;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Project {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-size: 6vh;
+    font-style: normal;
+    margin: 12px 0;
+    letter-spacing: 5px;
+}
+
