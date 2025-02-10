@@ -67,6 +67,8 @@ section {
     }
 }
 
+
+
 #Home .Intro .Nama{
     font-family: "Itim", serif;
     font-weight: 100;
@@ -123,6 +125,17 @@ section {
 
 }
 
+
+#About .Judul {
+
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-size: 6vh;
+    font-style: normal;
+    margin: 12px 0;
+    letter-spacing: 3px;
+    text-align: center;
+}
 #About .Skill {
     display: flex;
     align-items: center;
@@ -171,5 +184,13 @@ section {
     font-style: normal;
     margin: 12px 0;
     letter-spacing: 5px;
+    flex-direction: column;
+    
+}
+
+
+#Project .Detail {
+    display: flex;
+    flex-direction: column;
 }
 
