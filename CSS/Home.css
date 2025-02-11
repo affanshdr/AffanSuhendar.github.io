@@ -1,0 +1,113 @@
+#Home {
+    width: 100%;
+    color: var(--primary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#Home .Foto {
+    width: 200px;
+    height: 300px;
+    border-radius: 80px;
+    margin-left: 40px;
+    background-image: url('../Asset/Profil\ \(2\).jpeg');
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  -30px -140px;
+    background-size: 140%;
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    transition: 0.4s;
+    flex-shrink: 0; /* Prevent image shrinking */
+    box-shadow: 10px 10px 20px rgba(16, 16, 16, 0.5);
+}
+
+#Home .Foto:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px rgba(248, 248, 248, 0.5);
+}
+
+#Home .Intro {
+    width: 60%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+#Home .Intro .Nama{
+    font-family: "Itim", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+#Home .Intro .Jobdesk{
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-size: 6vh;
+    font-style: normal;
+    margin: 12px 0;
+    letter-spacing: 5px;
+}
+
+#Home .Intro .About {
+    font-family: "Itim", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+#Home .Intro .Download {
+    display: flex;
+    margin: 12px 0;
+}
+
+#Home .Intro .Download a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: var(--primary-color);
+    margin-right: 90px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-family: "Itim", serif;
+    transition: 1s;
+}
+
+    /* Styling link */
+    .Download a {
+        display: inline-block;
+        margin-right: 15px;
+        text-decoration: none;
+        color: blue;
+        position: relative;
+        cursor: pointer;
+      }
+  
+      /* Tooltip Styling */
+      .Download a::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 12px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+  
+      /* Show tooltip on hover */
+      .Download a:hover::after {
+        visibility: visible;
+        opacity: 1;
+      }

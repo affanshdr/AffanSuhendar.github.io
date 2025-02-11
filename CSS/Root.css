@@ -21,3 +21,17 @@ body, html {
 * {
     margin: 0;
 }
+
+main {
+    height: 1000px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 40px 0;
+}
