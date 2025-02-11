@@ -11,8 +11,8 @@ body {
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow-y: scroll;
+    height: 3000px;
+
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
@@ -23,7 +23,7 @@ body, html {
 }
 
 main {
-    height: 1000px;
+    height: 2000px;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
