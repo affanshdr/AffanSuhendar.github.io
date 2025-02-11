@@ -76,9 +76,8 @@
         color: var(--primary-color);
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column-reverse;
-        border: solid #fff;
+        padding-bottom: 100px;
     }
     
     #Contact .Foto {
@@ -94,6 +93,8 @@
         transition: transform 0.3s ease;
         flex-shrink: 0; /* Prevent image shrinking */
         transition: 0.4s;
+        margin-right: 30px;
+        margin-bottom: 15px;
     }
     
     #Contact .Foto:hover{
@@ -106,7 +107,6 @@
         display: flex;
         flex-direction: column;
         padding-right: 60px;
-        border:solid #fb1f1f;
     }
     
     #Contact .Intro .Nama {
@@ -120,7 +120,7 @@
     
     #Contact .Intro .About {
         font-family: "Itim", serif;
-        font-weight: 100;
+        font-weight: 300;
         font-style: normal;
         font-size: 1.4vh;
         margin: 10px 0;
@@ -139,7 +139,7 @@
     
     .SocialMedia {
         display: flex;
-       
+        margin-left: -10px;
     }
     
 }
