@@ -11,7 +11,7 @@ body {
 body, html {
     margin: 0;
     padding: 0;
-    height: 3000px;
+    height: 4000px;
 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;

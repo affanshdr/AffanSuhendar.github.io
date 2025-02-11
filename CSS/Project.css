@@ -32,6 +32,42 @@
     border: solid #fff ;
 }
 
+@media (max-width: 874px) {
+    #Project {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Jersey 25", serif;
+        font-weight: 400;
+        font-size: 4vh;
+        font-style: normal;
+        margin: 12px 0;
+        letter-spacing: 5px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+    
+    
+    #Project .Detail {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    #Contact {
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .format {
+        border: solid #fff ;
+    }
+}
+
 @media (max-width: 481px){
     #Project {
         color: white;
