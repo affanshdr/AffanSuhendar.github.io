@@ -1,0 +1,10 @@
+/* Move and Change Color Animation */
+@keyframes Rotate {
+    from {
+        transform: Rotate(360deg);
+    }
+
+    to {
+        transform: Rotate(0deg);
+    }
+  }
