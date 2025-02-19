@@ -12,8 +12,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
-    color: rgb(55, 53, 53);
+    background-color: #1d1d1d;
+    color: rgb(253, 253, 253);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,13 +56,24 @@ h1 {
     }
     to {
         opacity: 1;
+        color: #ffffff;
         
     }
 }
 
+@keyframes MunculBawahBorder {
+    from {
+    }
+    to {
+        opacity: 1;
+        background: rgb(160, 6, 6);
+    }
+}
+
+
 
 .Satu span{
-    animation: MunculAtas 2s ease-in-out 3s forwards;
+      animation: MunculAtas 1.5s ease-in-out 3s forwards; 
     opacity: 0;
     display: inline-block;
 }
@@ -108,7 +119,8 @@ h1 {
 }
 
 .Dua span{
-    animation: MunculBawah 2s ease-in-out forwards;
+
+    animation: MunculBawah 1.5s ease-in-out forwards;
     opacity: 0;
     display: inline-block;
 }
@@ -145,3 +157,48 @@ h1 {
     animation-delay: 2s;
 }
 
+.Background {
+    background: rgba(255, 0, 0, 0); /* Warna merah dengan transparansi 50% */
+    padding: 20px 40px;
+    border-radius: 30px;
+    animation: MunculBawahBorder 1.5s ease-in-out 3.5s forwards;
+}
+
+@media (max-width: 500px) {
+    
+#splash-screen {
+   
+    
+    background-color: #1d1d1d;
+    color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+    .Kata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px;
+        font-family: "Anton", serif;
+        letter-spacing: 4px;
+        height: 100vh;
+        
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    .Background {
+
+        padding: 10px 20px;
+        border-radius: 20px;
+        animation: MunculBawahBorder 1.5s ease-in-out 3.5s forwards;
+    }
+}

@@ -10,6 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         section.classList.remove("visible");
     }
 
+    // Fungsi Memunculkan kelas Active
+    function showActive(aside) {
+        aside.classList.add("Active")
+    }
+
+    // Fungsi Menghilangkan kelas Active
+    function hideSection(aside) {
+        aside.classList.remove("Active")
+    }
+
     // Memunculkan section pertama saat halaman pertama kali dibuka
     const firstSection = document.getElementById('Home');
     showSection(firstSection);
@@ -17,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Intersection Observer API untuk mendeteksi saat section terlihat di viewport
     const sections = document.querySelectorAll('.section');
     const observerOptions = {
-        threshold: 0.5, // Trigger when 50% of the section is visible
+        threshold: 0.3,
     };
 
     // Menyimpan section yang terakhir terlihat
