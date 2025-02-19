@@ -34,4 +34,18 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     padding: 40px 0;
+
+
+
+
+    /* Perubahan */
+    transition: opacity 1s, transform 1s;
+    opacity: 0; 
+    transform: translateY(50px); 
 }
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

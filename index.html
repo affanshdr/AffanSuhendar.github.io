@@ -3,191 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="./Splash/Splash.css">
 
-    <!-- Link Css -->
-    <link rel="stylesheet" href="./CSS/Aside.css">
-    <link rel="stylesheet" href="./CSS/Nav.css">
-    <link rel="stylesheet" href="./CSS/Root.css">
-    <link rel="stylesheet" href="./CSS/Home.css">
-    <link rel="stylesheet" href="./CSS/About.css">
-    <link rel="stylesheet" href="./CSS/Project.css">
-    <link rel="stylesheet" href="./CSS/Contact.css">
-    <link rel="stylesheet" href="./CSS/Animation.css">
-
-    <!-- Css Video -->
-    <link rel="stylesheet" href="./CSS/Video.css">
-
-    <!--Link Font-->
+    <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-    
-    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <script>
+
+
+        // Function ke file Utama Cuy
+        
+        function redirectToMain() {
+            setTimeout(function() {
+                window.location.href = "Utama.html"; 
+            }, 4200); 
+        }
+        
+    </script>
 </head>
-<body>
 
-    <!--
-    <video class="background-video" src="./Asset/video2.mp4" autoplay loop muted></video>
-    -->
-    
-    <nav>
-        <a href="#Home">
-        <h2>Affan_xD</h2></a>
-        
-    </nav>
+<!-- Panggil Fungsi -->
+<body onload="redirectToMain()"> 
+    <div id="splash-screen">
 
-    <aside>
-        <a class="Link-Home" href="#Home">
-            <img src="./Asset/home.png" alt="home" >
-        </a>
-        <a href="#About">
-            <img src="./Asset/user (1).png" alt="home" >
-        </a>
-        <a href="#Project">
-            <img src="./Asset/paper.png" alt="home" >
-        </a>
-        <a href="#Contact">
-            <img src="./Asset/contact-us.png" alt="home" >
-        </a>
-    </aside>
+        <div class="Kata">
+            <h1 class="Satu"><span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span style="margin-right:25px;"></span><span>T</span><span>o</span></h1>
+            <h1 class="Dua"><span>M</span><span>y</span><span style="margin-right:25px;;"></span><span>W</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span></h1>
+        </div>
 
-  <main>
+    </div>
 
-        <section id="Home">
-        
-
-            <div class="Intro">
-        
-
-                <div class="Nama">
-                    <h3>Affan Suhendar</h3>
-                </div>
-
-                <div class="Jobdesk">
-                    <h1><span>F</span><span>U</span><span>L</span><span>L<span style="opacity: 0;">_</span></span><span>S</span><span>T</span><span>A</span><span>C</span><span>K</span></h1>
-                    <h1><span>W</span><span>E</span><span>B</span><span style="opacity: 0;">_</span><span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span></h1>
-                </div>
-
-                <div class="About">
-                    <p> "I am a junior fullstack web developer specializing in web development. I also have a keen interest in data mining and mobile development, and I am always eager to learn new things."</p>
-                </div>
-
-                <div class="Download">
-                    <a href="#" data-tooltip="sorry, not yet available">Download CV</a>
-                    <a href="#Contact">Contact Me</a>
-                </div>
-            </div>
-
-            <div class="Foto">
-                <div class="Template">
-
-                </div>
-            </div>
-
-        </section>
-
-        <section id="About">
-                <div class="About">
-                    <h1 class="Judul">About me</h1>
-                    <hr>
-                </div>
-            
-                <div class="Skill">
-                    <h1>Skills</h1>
-                    <div class="Card-Skill">
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/web.png">
-                            <p>Web development</p>
-                        </div>
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/machine learning.png">
-                            <p>Machine learning</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="Skill">
-                    <h1>Leanguage & Framework</h1>
-                    <div class="Card-Skill">
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/html (1).png">
-                            <p>HTML</p>
-                        </div>
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/css-3.png">
-                            <p>CSS</p>
-                        </div>
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/js.png">
-                            <p>Javascript</p>
-                        </div>
-
-                        <div class="Card">
-                            <img class="img" src="./Asset/react.png">
-                            <p>React</p>
-                        </div>
-
-            
-                    </div>
-                </div>
-
-                
-        
-        </section>
-
-        <section id="Project">
-            <div class="Nama">
-                <h1>Project</h1>
-            </div>
-            <div class="Detail">
-                <h1>< Coming Soon ></h1>
-            </div>
-        </section>
-
-        <section id="Contact">
-            <div class="Intro">
-                <div class="Nama">
-                    <h1>Get In Touch</h1>
-                </div>
-
-                <div class="About">
-                    <p>Fell free to contact me if you have any question :)</p>
-                    <p>affansuhendar1@gmail.com</p>
-                </div>
-
-                <div class="SocialMedia">
-                    <a href="https://github.com/affanshdr" target="_blank">
-                        <img class="Social" src="./Asset/github.png" style="background-color: #fff; border-radius: 14px;">
-                    </a>
-
-                    <a href="https://www.instagram.com/affan_mno/" target="_blank">
-                        <img class="Social" src="./Asset/instagram.png">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/affan-suhendar-4a4778284/" target="_blank">
-                        <img class="Social" src="./Asset/linkedin.png">
-                    </a>
-
-                </div>
-            </div>
-            
-            <div class="Foto">
-                <img src="">
-            </div>
-        </section>
-
-    </main>
-
-
-
-    <script src="./Javascript/Javascript.js"></script>
-    
 </body>
 </html>
