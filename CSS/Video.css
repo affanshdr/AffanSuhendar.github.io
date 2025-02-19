@@ -1,0 +1,10 @@
+.background-video {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.3;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    top: 0px;
+    right: 0px;
+}
