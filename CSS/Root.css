@@ -59,30 +59,33 @@ aside a.Active {
 }
 
 
-        /* Gaya splash screen di sini */
-        #splash-screen.hidden {
-            display: none;
-        }
+#splash-screen.hidden {
+    display: none;
+}
 
-        #splash-screen {
-            display: flex;
-            position: fixed;
-            inset: 0; /* Memenuhi layar */
-            background-color: white;
-            justify-content: center;
-            align-items: center;
-            z-index: 50; /* Di atas elemen lainnya */
-            transition: opacity 0.3s ease-in-out;
-        }
+#splash-screen {
+    display: flex;
+    position: fixed;
+    inset: 0; /* Memenuhi layar */
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 50; /* Di atas elemen lainnya */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
 
-        #splash-screen.hidden {
-            opacity: 0;
-        }
+#splash-screen.hidden {
+    opacity: 0;
+}
 
-        #splash-screen {
-            opacity: 1;
-        }
-
+/* Gaya untuk video agar tetap di tengah dan responsif */
+#splash-screen video {
+    max-width: 90vw; /* Maksimal lebar 90% dari viewport width */
+    max-height: 90vh; /* Maksimal tinggi 90% dari viewport height */
+    object-fit: cover; /* Pastikan video menyesuaikan ukuran */
+    border-radius: 10px; /* Opsional: beri sudut melengkung pada video */
+}
 
 
 

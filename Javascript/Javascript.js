@@ -67,35 +67,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+// Fungsi untuk menampilkan dan menyembunyikan splash screen
 function showSplashScreen() {
     document.getElementById('splash-screen').classList.remove('hidden');
 }
-
 
 function hideSplashScreen() {
     document.getElementById('splash-screen').classList.add('hidden');
 }
 
+// Event listener untuk link di aside
 document.querySelectorAll('aside a').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault(); 
+        e.preventDefault(); // Mencegah aksi default link
 
-
+        // Tampilkan splash screen
         showSplashScreen();
 
-
+        // Scroll ke section setelah sedikit delay
         const targetSection = document.querySelector(this.getAttribute('href'));
         setTimeout(() => {
             targetSection.scrollIntoView({
                 behavior: 'smooth'
             });
 
-
-            setTimeout(hideSplashScreen, 1000); 
-        }, 500);
+            // Sembunyikan splash screen setelah scroll selesai
+            setTimeout(hideSplashScreen, 1000); // Durasi animasi
+        }, 500); // Delay untuk efek splash
     });
 });
-
-
-
