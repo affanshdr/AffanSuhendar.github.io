@@ -12,7 +12,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 4000px;
-
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
@@ -48,4 +47,15 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/*
+aside a.Active {
+    background-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    transform: scale(1.1);
+    color: white;
+}
+
+*/
+
 
