@@ -27,7 +27,6 @@
 
 @keyframes GantiWarna {
     0%,100% { color: #ffffff; }    /* Putih */
-    25% { color: #fe7b00; }   /* Biru Muda */
-    50% { color: #8e44ad; }   /* Ungu */
-    75% { color: #008612; }   /* Hijau Neon */
+    25% { color: #0f3fff; }   /* Biru Muda */  /* Ungu */
+    75% { color: #ffffff; }   /* Hijau Neon */
   }
