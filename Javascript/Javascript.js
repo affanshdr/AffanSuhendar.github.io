@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
     // Fungsi untuk memunculkan section dengan transisi
     function showSection(section) {
         section.classList.add("visible");
@@ -10,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
         section.classList.remove("visible");
     }
 
-    // Fungsi Memunculkan kelas Active
-    function showActive(aside) {
-        aside.classList.add("Active")
+    // Fungsi Memunculkan kelas Active di link aside
+    function showActive(asideLink) {
+        asideLink.classList.add("Active");
     }
 
-    // Fungsi Menghilangkan kelas Active
-    function hideSection(aside) {
-        aside.classList.remove("Active")
+    // Fungsi Menghilangkan kelas Active di link aside
+    function hideActive(asideLink) {
+        asideLink.classList.remove("Active");
     }
 
     // Memunculkan section pertama saat halaman pertama kali dibuka
@@ -26,32 +25,77 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Intersection Observer API untuk mendeteksi saat section terlihat di viewport
     const sections = document.querySelectorAll('.section');
+    const asideLinks = document.querySelectorAll('aside a'); // Ambil semua link dalam aside
     const observerOptions = {
-        threshold: 0.3,
+        threshold: 0.9,
     };
 
-    // Menyimpan section yang terakhir terlihat
+
     let lastVisibleSection = firstSection;
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Hapus kelas 'visible' dari section yang sebelumnya terlihat
+  
                 if (lastVisibleSection && lastVisibleSection !== entry.target) {
                     hideSection(lastVisibleSection);
                 }
-                
-                // Menampilkan section saat ini
+
+
                 showSection(entry.target);
 
-                // Set section saat ini sebagai lastVisibleSection
+
+                asideLinks.forEach(link => hideActive(link));
+
+
+                const targetLink = document.querySelector(`aside a[data-target="${entry.target.id}"]`);
+                if (targetLink) {
+                    showActive(targetLink);
+                }
+
+  
                 lastVisibleSection = entry.target;
             }
         });
     }, observerOptions);
 
-    // Terapkan observer ke semua section
+
     sections.forEach(section => {
         observer.observe(section);
     });
 });
+
+
+
+
+function showSplashScreen() {
+    document.getElementById('splash-screen').classList.remove('hidden');
+}
+
+
+function hideSplashScreen() {
+    document.getElementById('splash-screen').classList.add('hidden');
+}
+
+document.querySelectorAll('aside a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); 
+
+
+        showSplashScreen();
+
+
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        setTimeout(() => {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+
+            setTimeout(hideSplashScreen, 1000); 
+        }, 500);
+    });
+});
+
+
+

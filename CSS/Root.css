@@ -48,14 +48,41 @@ section {
     transform: translateY(0);
 }
 
-/*
+
 aside a.Active {
     background-color: #007bff;
+    border-radius: 4px;
+    padding: 3px;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     transform: scale(1.1);
     color: white;
 }
 
-*/
+
+        /* Gaya splash screen di sini */
+        #splash-screen.hidden {
+            display: none;
+        }
+
+        #splash-screen {
+            display: flex;
+            position: fixed;
+            inset: 0; /* Memenuhi layar */
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            z-index: 50; /* Di atas elemen lainnya */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #splash-screen.hidden {
+            opacity: 0;
+        }
+
+        #splash-screen {
+            opacity: 1;
+        }
+
+
 
 
