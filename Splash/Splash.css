@@ -224,7 +224,7 @@ h1 {
 
     .Background {
 
-        padding: 10px 20px;
+        padding: 7px 15px;
         border-radius: 20px;
         animation: MunculBawahBorder 1.5s ease-in-out 3.5s forwards;
         display: flex;
