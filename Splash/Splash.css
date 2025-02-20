@@ -93,7 +93,7 @@ h1 {
       animation: MunculAtas 1.5s ease-in-out 3s forwards; 
     opacity: 0;
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
 }
 
 .Satu span:nth-child(1){
