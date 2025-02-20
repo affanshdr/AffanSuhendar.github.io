@@ -30,3 +30,14 @@
     25% { color: #0f3fff; }   /* Biru Muda */  /* Ungu */
     75% { color: #ffffff; }   /* Hijau Neon */
   }
+
+
+@keyframes GantiBorder {
+    0%,100% {
+        border: solid rgb(88, 32, 241);
+    }
+
+    50% {
+        border: solid rgb(14, 157, 235);
+    }
+}

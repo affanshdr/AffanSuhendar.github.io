@@ -8,9 +8,12 @@
     font-family: "Itim", serif;
     padding: 40px 0;
     margin-left: 40px;
-    margin-bottom: 50px ;
+
 }
 
+#About .About {
+    margin-top: 60px;
+}
 
 #About .Judul {
 
@@ -21,49 +24,91 @@
     margin: 12px 0;
     letter-spacing: 3px;
     text-align: center;
-
+    
 }
-#About .Skill {
+
+#About .Judul span {
+    display: inline-block;
+    animation: GantiWarna 2s infinite ease-in-out 0.3s, Wave 2s ease-in-out 1s infinite ;
+}
+
+    #About .Judul span:nth-child(1){
+        animation-delay: 0.1s;
+    }
+    
+    #About .Judul span:nth-child(2){
+        animation-delay: 0.2s;
+    }
+    
+    #About .Judul span:nth-child(3){
+        animation-delay: 0.3s;
+    }
+    
+    #About .Judul span:nth-child(4){
+        animation-delay: 0.4s;
+    }
+
+    #About .Judul span:nth-child(5){
+        animation-delay: 0.5s;
+    }
+    
+    #About .Judul span:nth-child(6){
+        animation-delay: 0.6s;
+    }
+
+    #About .Judul span:nth-child(7){
+        animation-delay: 0.7s;
+    }
+
+    #About .Judul span:nth-child(8){
+        animation-delay: 0.8s;
+    }
+
+    #About .Judul span:nth-child(9){
+        animation-delay: 0.9s;
+    }
+
+    #About .Judul span:nth-child(10){
+        animation-delay: 1s;
+    }
+
+#About {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 90%;
-    height: 160px;
-    padding: 10px;
-    justify-content: space-around;
-    margin: 20px;
-    transition: 0.5s;
-
-}
-
-
-
-.Card-Skill {
-
+    height: 100vh; /* This ensures the section takes up the full view height */
+  }
+  
+  .Skill {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-content: space-around;
-    border: #fff;
-}
+    width: 90%;
+    height: auto; /* Make height adaptive */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; /* Center horizontally */
+  }
+  
+  .Card {
+    padding: 30px;
+    display: flex;
+    margin: 10px;
+    color: rgb(33, 154, 252);
+    border-radius: 15px;
+    width: 250px;
+    background-color: #fff;
+    animation: GantiBorder 1s linear infinite;
+  }
+  
+
+
 
 .img {
     height: 60px;
     width: 60px;
-    
+    margin: 5px;
 }
 
-
-.Card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.Card:hover{
-    transform: scale(1.4);
-}
 
 @media (max-width: 481px) {
     #About {
