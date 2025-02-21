@@ -1,14 +1,16 @@
 .app {
-    width: 80%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    position: absolute;
-    top: 590px;
-  }
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 590px;
+
+}
+
 
   
   .tag-list {
@@ -40,7 +42,7 @@
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 0.9rem;
-    background-color: #334155;
+    background-color: #0f6ff7;
     border-radius: 0.4rem;
     padding: 0.7rem 1rem;
     margin-right: 1rem; 
@@ -51,6 +53,6 @@
     
     span {
       font-size: 1.2rem;
-      color: #64748b;
+      color: #ffffff;
     }
   }

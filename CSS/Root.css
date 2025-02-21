@@ -22,12 +22,13 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar {
-    background: white;
+    background: rgb(43, 43, 43);
 }
 
 html::-webkit-scrollbar-thumb {
-    background: blue;
-    border-radius: 10px;
+    background-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    border-radius: 5px;
 }
 
 * {
@@ -64,9 +65,9 @@ section {
 
 aside a.Active {
     background-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     border-radius: 4px;
     padding: 3px;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     transform: scale(1.1);
     color: white;
 }

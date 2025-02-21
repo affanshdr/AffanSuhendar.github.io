@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #1e293b;
     color: white;
   }
 
@@ -22,6 +21,7 @@
     position: relative;
     padding: 1.5rem 0;
     overflow: hidden;
+    box-shadow: 10px 0 5px -2px rgba(173, 172, 172, 0.5), -10px 0 5px -2px rgba(182, 182, 182, 0.5);
   }
   
   .loop-slider {
