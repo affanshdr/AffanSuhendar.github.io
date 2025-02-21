@@ -97,10 +97,11 @@
     border-radius: 15px;
     width: 250px;
     background-color: #fff;
-    animation: GantiBorder 1s linear infinite;
   }
   
-
+.Card:hover {
+    animation: Hover 1s ease-in-out forwards ;
+}
 
 
 .img {

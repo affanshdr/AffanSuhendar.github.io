@@ -17,6 +17,19 @@ body, html {
 }
 
 
+html::-webkit-scrollbar {
+    width: 20px;
+}
+
+html::-webkit-scrollbar {
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
+
 * {
     margin: 0;
 }

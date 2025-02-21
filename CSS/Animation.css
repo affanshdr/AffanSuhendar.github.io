@@ -32,12 +32,21 @@
   }
 
 
-@keyframes GantiBorder {
-    0%,100% {
-        border: solid rgb(88, 32, 241);
+@keyframes Hover {
+    0% {
     }
 
-    50% {
-        border: solid rgb(14, 157, 235);
+    100% {
+        background-color: rgb(27, 27, 27);
+        color: white;
     }
 }
+
+@keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
