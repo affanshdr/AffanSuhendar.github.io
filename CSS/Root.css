@@ -48,19 +48,12 @@ section {
     scroll-snap-align: start;
     padding: 40px 0;
 
-
-
-
     /* Perubahan */
     transition: opacity 1s, transform 1s;
-    opacity: 0; 
     transform: translateY(50px); 
 }
 
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 
 
 aside a.Active {
@@ -73,33 +66,8 @@ aside a.Active {
 }
 
 
-#splash-screen.hidden {
-    display: none;
-}
 
-#splash-screen {
-    display: flex;
-    position: fixed;
-    inset: 0; /* Memenuhi layar */
-    background-color: rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
-    z-index: 50; /* Di atas elemen lainnya */
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-}
 
-#splash-screen.hidden {
-    opacity: 0;
-}
-
-/* Gaya untuk video agar tetap di tengah dan responsif */
-#splash-screen video {
-    max-width: 90vw; /* Maksimal lebar 90% dari viewport width */
-    max-height: 90vh; /* Maksimal tinggi 90% dari viewport height */
-    object-fit: cover; /* Pastikan video menyesuaikan ukuran */
-    border-radius: 10px; /* Opsional: beri sudut melengkung pada video */
-}
 
 
 
