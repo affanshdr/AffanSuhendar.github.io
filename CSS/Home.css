@@ -52,7 +52,7 @@
     font-weight: 400;
     font-size: 6vh;
     font-style: normal;
-    margin: 12px 0;
+    margin: 10px 0;
     letter-spacing: 5px;
 }
 
@@ -384,26 +384,8 @@
     }
 
     @media (max-width: 500px) {
-        .gear {
-            position: absolute;
-            animation: Rotate 2s ease-in-out infinite;
-        }
-        
 
-        .satu {
-            top: 450px;
-            right: 80px;
-        }
-        
-        .dua {
-            top: 480px;
-            right: 80px;
-        }
-        
-        .tiga {
-            top: 465px;
-            right: 52px;
-        }
+
 
         #Home {
             width: 100%;
@@ -456,7 +438,7 @@
         #Home .Intro .Jobdesk{
             font-family: "Jersey 25", serif;
             font-weight: 300;
-            font-size: 3vh;
+            font-size: 2vh;
             font-style: normal;
             margin: 12px 0;
             letter-spacing: 5px;
@@ -466,7 +448,7 @@
             font-family: "Itim", serif;
             font-weight: 100;
             font-style: normal;
-            font-size: 1.5vh;
+            font-size: 1.3vh;
             margin: 12px 0;
         }
         

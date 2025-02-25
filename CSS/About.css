@@ -98,10 +98,7 @@
     width: 250px;
     background-color: #fff;
   }
-  
-.Card:hover {
-    animation: Hover 1s ease-in-out forwards ;
-}
+
 
 
 .img {
@@ -117,14 +114,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-items: center;
         flex-direction: column; 
         color: var(--primary-color);
         font-family: "Itim", serif;
-        margin-left: 20px;
-        padding: 40px 0px;
-        padding-right: 30px;
+        padding: 10px 0;
+        margin-left: 10px;
+        height: 90vh;
+    
     }
     
+    #About .About {
+        margin-top: 200px;
+    }
     
     #About .Judul {
     
@@ -132,53 +134,85 @@
         font-weight: 400;
         font-size: 6vh;
         font-style: normal;
-        margin: 12px 0;
         letter-spacing: 3px;
         text-align: center;
-    
-    }
-    #About .Skill {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 90%;
-        height: 160px;
-        padding: 10px;
-        justify-content: space-around;
-        margin: 1px;
-        transition: 0.5s;
-        font-size: 1.5vh;
-    }
-    
-    
-    
-    .Card-Skill {
-    
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        align-content: space-around;
-        border: #fff;
-        flex-wrap: wrap;
-    }
-    
-    .img {
-        height: 40px;
-        width: 40px;
         
     }
     
-    
-    .Card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: 0.5s;
-        font-size: 1.6vh;
-        flex-wrap: nowrap;
+    #About .Judul span {
+        display: inline-block;
+        animation: GantiWarna 2s infinite ease-in-out 0.3s, Wave 2s ease-in-out 1s infinite ;
     }
     
-    .Card:hover{
-        transform: scale(1.4);
+        #About .Judul span:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        
+        #About .Judul span:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        
+        #About .Judul span:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        
+        #About .Judul span:nth-child(4){
+            animation-delay: 0.4s;
+        }
+    
+        #About .Judul span:nth-child(5){
+            animation-delay: 0.5s;
+        }
+        
+        #About .Judul span:nth-child(6){
+            animation-delay: 0.6s;
+        }
+    
+        #About .Judul span:nth-child(7){
+            animation-delay: 0.7s;
+        }
+    
+        #About .Judul span:nth-child(8){
+            animation-delay: 0.8s;
+        }
+    
+        #About .Judul span:nth-child(9){
+            animation-delay: 0.9s;
+        }
+    
+        #About .Judul span:nth-child(10){
+            animation-delay: 1s;
+        }
+    
+      
+      #About span {
+        font-size: 2rem;
+      }
+
+      .Skill {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      .Card {
+        padding: 20px;
+        display: flex;
+        margin: 10px;
+        color: rgb(33, 154, 252);
+        border-radius: 15px;
+        width: 100px;
+        background-color: #fff;
+        font-size: 10px;
+      }
+      
+    
+    .img {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
     }
 }
